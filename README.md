@@ -42,7 +42,7 @@ db.Sessions.remove({"Expires" : {$lt : new Date() }})
     
 Example web.config settings:
 
-..
+
 <connectionStrings>
    <add name="SessionState" connectionString="mongodb://localhost"/>
 </connectionStrings>
@@ -53,6 +53,6 @@ Example web.config settings:
      </providers>
    </sessionState>
 </system.web>
-..
+
 
  Happy Coding!
