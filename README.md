@@ -20,7 +20,7 @@ Code: https://github.com/prasannavl/MongoSessionProvider
 
 
 Example session document:
-
+<code>
 > use SessionState;
 > db.Sessions.find().pretty();
 {
@@ -36,11 +36,13 @@ Example session document:
         "Flags" : 0
      }
     
+</code>
 
 Scheduled session cleanup command:
 db.Sessions.remove({"Expires" : {$lt : new Date() }})
     
 Example web.config settings
+<code>
 <connectionStrings>
    <add name="SessionState" connectionString="mongodb://localhost"/>
 </connectionStrings>
@@ -51,4 +53,5 @@ Example web.config settings
      </providers>
    </sessionState>
 </system.web>
+</code>
  Happy Coding!
