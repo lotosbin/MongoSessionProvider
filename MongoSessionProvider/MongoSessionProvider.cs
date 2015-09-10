@@ -140,7 +140,7 @@ namespace PVL
                 int result;
                 if (int.TryParse(config["writeConcern"], out result))
                     if ((result > -2))
-                        writeMode.W = result;
+                        writeMode=new WriteConcern(result);
             }
         }
 
