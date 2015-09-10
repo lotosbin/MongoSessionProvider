@@ -51,3 +51,11 @@ Example web.config settings:
        </sessionState>
     </system.web>
     .. 
+
+# publish nuget package
+
+..\.nuget\nuget pack
+
+..\.nuget\nuget push PVL.MongoSessionProvider.2.0.0.0.nupkg -Source https://www.myget.org/F/lotosbin-public-nuget/api/v2/package
+
+..\.nuget\nuget setapikey key -Source https://www.myget.org/F/lotosbin-public-nuget/api/v2/package 
