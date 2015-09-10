@@ -2,3 +2,4 @@ MongoSessionProvider/bin/
 MongoSessionProvider/obj/
 .vs/
 packages/
+*.nupkg
