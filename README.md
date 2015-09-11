@@ -4,7 +4,7 @@ MongoSessionProvider
 ASP.NET Session Provider for MongoDB
 
 Installation:
-
+Add Override Nuget feed source https://www.myget.org/F/lotosbin-public-nuget/api/v2
 ```
 PM> Install-Package PVL.MongoSessionProvider
 ```
@@ -53,9 +53,10 @@ Example web.config settings:
     .. 
 
 # publish nuget package
-
+```
 ..\.nuget\nuget pack
 
 ..\.nuget\nuget push PVL.MongoSessionProvider.2.0.0.0.nupkg -Source https://www.myget.org/F/lotosbin-public-nuget/api/v2/package
 
 ..\.nuget\nuget setapikey key -Source https://www.myget.org/F/lotosbin-public-nuget/api/v2/package 
+```
